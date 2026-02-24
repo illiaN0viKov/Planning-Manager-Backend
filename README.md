@@ -20,3 +20,8 @@ Ensure you have the following installed:
 git clone [https://github.com/illiaN0viKov/Planning-Manager.git](https://github.com/illiaN0viKov/Planning-Manager.git)
 cd Planning-Manager
 python -m venv venv
+source venv/scripts/activate
+pip install requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
